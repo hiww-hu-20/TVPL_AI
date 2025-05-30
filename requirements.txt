@@ -1,0 +1,16 @@
+python-docx
+torch
+transformers
+qdrant-client
+python-docx
+numpy
+PyYAML
+py_vncorenlp
+langchain
+uvicorn[standard]
+fastapi
+typing
+pydantic
+python-dotenv
+
+
