@@ -58,10 +58,12 @@ logs/
 temp/
 tmp/
 
-# Output files (nếu không muốn push)
+# Output files (tự sinh, không cần push)
 output/
 models/
+
+# JAR files (có thể tải lại)
 *.jar
 
-# Data files (nếu không muốn push)
-data/
+# Environment variables (nhạy cảm)
+.env
