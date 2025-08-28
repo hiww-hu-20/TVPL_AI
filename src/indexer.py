@@ -13,9 +13,10 @@ from src.qdrant_utils import recreate_collection, upsert_batch_to_qdrant
 QDRANT_HOST = os.getenv("QDRANT_HOST")
 QDRANT_PORT = int(os.getenv("QDRANT_PORT"))
 COLLECTION_NAME = os.getenv("COLLECTION_NAME")
-VECTOR_DIM = os.getenv("VECTOR_DIM")
+VECTOR_DIM = int(os.getenv("VECTOR_DIM"))
 
 def main():
+    print(f"QDRANT_HOST: {QDRANT_HOST}")
     client = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT)
     recreate_collection(client, COLLECTION_NAME, VECTOR_DIM)
 
